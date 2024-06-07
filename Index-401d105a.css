@@ -306,3 +306,6 @@ main {
 .grow.h-full.bg-gray-100.relative, #unified-runner {
   background-color: var(--active-button) !important;
 }
+body {
+  background-color: black !important;
+}
