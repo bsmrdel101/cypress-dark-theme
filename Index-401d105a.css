@@ -1,0 +1,308 @@
+
+/* Override <Button> classes, do not rely on css class order */
+.btn-disabled[data-v-8756dde8] {
+    --tw-border-opacity: 1;
+    border-color: rgb(67 72 97 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(67 72 97 / var(--tw-bg-opacity))
+}
+
+.matches-button[data-v-a493cfab]:before {
+  height: 100%;
+  width: 1px;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 227 237 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.group:focus .matches-button[data-v-a493cfab]:before {
+  background-color: transparent;
+}
+.group:hover .matches-button[data-v-a493cfab]:before {
+  background-color: transparent;
+}
+.matches-button[data-v-a493cfab]:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+}
+.orange-400[data-v-59b4ff47] {
+  border-top: 4px solid #db7903 !important;
+}
+.red-400[data-v-59b4ff47] {
+  border-top: 4px solid #e45770 !important;
+}
+.jade-400[data-v-59b4ff47] {
+  border-top: 4px solid #1fa971 !important;
+}
+.indigo-400[data-v-59b4ff47] {
+  border-top: 4px solid #6470f3 !important;
+}
+.gray-500[data-v-59b4ff47] {
+  border-top: 4px solid #9095ad !important;
+}.RunStatusDots_Tooltip .v-popper__arrow-container {
+  margin-left: 14px;
+}.testing-type-switcher button[role=tab] {
+  z-index: 2;
+}
+.testing-type-switcher div:first-of-type {
+  z-index: 1;
+}
+.testing-type-switcher div:last-of-type {
+  z-index: 3;
+}
+/**
+ * Can't put a group on the parent element as it has downstream effects on the styling of child components
+ * that have individual group stylings.
+ */
+[data-cy=spec-list-directory]:hover .run-all[data-v-3bbdefda], [data-cy=spec-list-directory]:focus-within .run-all[data-v-3bbdefda] {
+  opacity: 1 !important;
+}
+
+:root {
+--background: #222426;
+--dark-background: #171717;
+--lighter-background: #3a3a3a;
+--light-element: #444648;
+--active-button: #292c2e;
+--active-color: #cccccc;
+--button-border: 1px solid #3a3a3a;
+--command-border: 1px solid #606060;
+--command-important-border: 1px solid #aaaaaa;
+--active-command-border: 1px solid #707070;
+--highlighted-text: #dddddd;
+--pinned-command-background-color: #3b1654;
+--pinned-command-background-color-hover: #531f77;
+--icons-color: #999999;
+--icons-hover-color: #cccccc;
+/* passed and failed commands */
+--failed-command-background-color: inherit;
+--state-failed-background-color: #ae3a46;
+--state-failed-color: #f0adad;
+}
+.reporter {
+background-color: var(--background);
+}
+.runner header {
+background-color: var(--background);
+box-shadow: none;
+}
+.runner header .url {
+color: #aaaaaa;
+background-color: var(--background);
+}
+.runner .url:hover,
+.runner .url:focus,
+.runner .url:active {
+color: #eeeeee;
+}
+.runner .highlighted .url {
+background-color: var(--light-element);
+}
+.runner .url:focus {
+background-color: var(--light-element);
+}
+.runner .viewport-info button {
+text-shadow: none;
+}
+.runner .viewport-info button:hover {
+color: var(--active-color);
+}
+.runner {
+background-image: none;
+background-color: #2a2a2a;
+box-shadow: none;
+}
+.reporter .container {
+border: none;
+box-shadow: none;
+}
+.runner .selector-playground-toggle:hover {
+background: none;
+color: var(--active-color);
+}
+.reporter .runnable-header {
+background-color: var(--background);
+color: var(--active-color);
+}
+.reporter header {
+background-color: var(--background);
+color: var(--active-color);
+border-bottom: var(--button-border);
+}
+.reporter header button {
+background-color: var(--background);
+}
+.reporter header button:hover {
+background-color: var(--background);
+color: var(--active-color);
+}
+.reporter .runnable {
+background-color: var(--background);
+}
+.reporter .runnable:hover {
+background-color: var(--background);
+}
+.reporter .commands-container {
+background-color: var(--active-button);
+}
+.reporter .command-wrapper{
+background-color: var(--active-button);
+}
+.reporter .command-wrapper:hover {
+background-color: var(--active-button);
+color: var(--highlighted-text);
+box-shadow: none;
+-webkit-box-shadow: none;
+}
+.reporter .focus-tests button {
+border-right: var(--button-border);
+}
+.reporter .stats .duration {
+border-left: var(--button-border);
+border-right: var(--button-border);
+}
+.reporter .controls > span:last-child button {
+border-right: var(--button-border);
+}
+.reporter .command-state-pending > span > .command-wrapper {
+background-color: var(--lighter-background);
+}
+.reporter .command-type-parent {
+border-top: var(--command-border);
+}
+.reporter .command-type-parent:hover {
+border-top: var(--active-command-border);
+}
+.runner .aut-iframe {
+background-color: var(--background);
+}
+.reporter .runnable.suite > div > .runnable-wrapper .runnable-title {
+color: var(--active-color);
+}
+.reporter .hooks-container .hook-name:hover {
+color: var(--highlighted-text);
+}
+.reporter .command-is-pinned > span > .command-wrapper {
+background-color: var(--pinned-command-background-color);
+}
+.reporter .command-is-pinned > span > .command-wrapper:hover {
+background-color: var(--pinned-command-background-color-hover);
+}
+.runner .message-controls {
+background-color: var(--background);
+}
+.runner .snapshot-controls.showing-selection .toggle-selection {
+background-color: var(--active-button);
+}
+.runner .snapshot-controls button:active {
+background-color: var(--active-button);
+color: var(--active-color);
+}
+.runner .snapshot-controls .snapshot-state-picker button.state-is-selected {
+background-color: #666565;
+color: yellow;
+}
+.runner .snapshot-controls button:hover {
+background-color: var(--active-button);
+color: var(--active-color);
+}
+.reporter .command-name-assert.command-state-passed .command-method span {
+background-color: #045e45;
+color: #17cf20;
+}
+.reporter ::-webkit-scrollbar-thumb {
+background-color: var(--background);
+}
+.reporter ::-webkit-scrollbar-track {
+background-color: var(--dark-background);
+}
+.reporter .command-state-failed > span > .command-wrapper {
+background-color: var(--failed-command-background-color);
+}
+.reporter .command-state-failed > span > .command-wrapper:hover {
+background-color: var(--failed-command-background-color);
+}
+.reporter .command-name-assert.command-state-failed .command-method span {
+background-color: var(--state-failed-background-color);
+color: var(--state-failed-color);
+}
+.reporter .runnable pre {
+background-color: var(--background);
+}
+.reporter .runnable pre:hover {
+background-color: var(--lighter-background);
+}
+.reporter pre {
+border: var(--command-important-border);
+}
+.reporter .runnable-controls i {
+color: var(--icons-color);
+}
+.reporter .runnable-controls i:hover {
+color: var(--icons-hover-color);
+}
+.reporter
+.runnable.suite.runnable-failed
+> div
+> .runnable-wrapper
+.collapsible-more {
+margin-left: 5px;
+}
+div#app > div {
+	background: var(--dark-background);
+}
+div.Pane.vertical.Pane1 > nav {
+	background: var(--dark-background);
+	color: white;
+	border: var(--button-border);
+}
+div.Pane.vertical.Pane1 > nav svg {
+	color: grey;
+}
+div.Pane.vertical.Pane2 {
+	border-color: var(--button-border) !important;
+}
+div.treeChild > span:hover {
+	background-color: transparent;
+}
+main {
+  color: white !important;
+}
+[data-cy="header-bar-content"] {
+  background-color: var(--dark-background) !important;
+  color: white;
+}
+[data-cy="header-bar-content"] button {
+  background-color: var(--dark-background) !important;
+  color: white;
+}
+.pl-4 {
+  padding: 0 1rem !important;
+}
+#spec-filter {
+  background-color: var(--lighter-background) !important;
+  color: white !important;
+}
+.pr-3 {
+  background-color: var(--active-button) !important;
+  color: white !important;
+}
+[data-cy="last-updated-header"],[data-cy="latest-runs-header"],[data-cy="average-duration-header"],[data-cy="testing-type-switch"],[data-cy="aut-url-input"],[data-cy="spec-list-directory"],[data-cy="run-all"],[data-cy="run-selected"],[data-cy="run-failed"],[data-cy="run-retry"],[data-cy="run-again"],[data-cy="run-again-failed"],[data-cy="run-again-retry"],[data-cy="run-again-selected"],[data-cy="run-again-all"],[data-cy="run-again-all-failed"],[data-cy="run-again-all-retry"],[data-cy="run-again-all-selected"],[data-cy="run-again-all-selected-failed"],[data-cy="select-browser"] {
+  background-color: var(--active-button) !important;
+  color: white !important;
+}
+#spec-runner-header, #headlessui-popover-button-19 {
+  background-color: var(--active-button) !important;
+  color: white !important;
+}
+.grow.h-full.bg-gray-100.relative, #unified-runner {
+  background-color: var(--active-button) !important;
+}
